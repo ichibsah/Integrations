@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\Jian\Documents\GitHub\.NET Integrations\MasterPageSwitch\Published" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="02/14/2013 09:54:47" />
+    <file relUrl="bin/ScoreChart.pdb" publishTime="02/14/2013 15:32:07" />
+    <file relUrl="ChartData.xml" publishTime="02/14/2013 10:05:14" />
+    <file relUrl="bin/ScoreChart.dll" publishTime="02/14/2013 15:32:07" />
+    <file relUrl="ScoreChart.ascx" publishTime="02/14/2013 15:03:37" />
+  </publishProfile>
+</publishData>
