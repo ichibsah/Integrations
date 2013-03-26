@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml;
+using System.IO;
 
 namespace ScoreChart
 {
@@ -18,7 +20,8 @@ namespace ScoreChart
 
             if (string.IsNullOrEmpty(this.DataXmlPath) != true)
             {
-                BasicChart.Serializer.Load(Server.MapPath(this.DataXmlPath));
+                StreamReader sr = new StreamReader(Server.MapPath(this.DataXmlPath));
+                BasicChart.Serializer.Load(sr);
             }
         }
 
