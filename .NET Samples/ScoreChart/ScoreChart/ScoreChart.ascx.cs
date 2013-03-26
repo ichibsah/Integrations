@@ -20,8 +20,11 @@ namespace ScoreChart
 
             if (string.IsNullOrEmpty(this.DataXmlPath) != true)
             {
-                StreamReader sr = new StreamReader(Server.MapPath(this.DataXmlPath));
-                BasicChart.Serializer.Load(sr);
+                XmlReaderSettings settings = new XmlReaderSettings();
+                settings.XmlResolver = null;
+                settings.DtdProcessing = DtdProcessing.Parse;
+                XmlReader reader = XmlReader.Create(Server.MapPath(this.DataXmlPath), settings);
+                BasicChart.Serializer.Load(reader);
             }
         }
 
