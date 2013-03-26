@@ -23,6 +23,7 @@ namespace ScoreChart
                 XmlReaderSettings settings = new XmlReaderSettings();
                 settings.XmlResolver = null;
                 settings.DtdProcessing = DtdProcessing.Parse;
+                settings.ProhibitDtd = false;
                 XmlReader reader = XmlReader.Create(Server.MapPath(this.DataXmlPath), settings);
                 BasicChart.Serializer.Load(reader);
             }
